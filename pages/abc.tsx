@@ -1,7 +1,7 @@
 import { useLang } from '@/hooks';
 import type { NextPage } from 'next';
 
-const Home: NextPage = () => {
+const Abc: NextPage = () => {
   const dataLang = useLang();
   return (
       <>
@@ -10,4 +10,4 @@ const Home: NextPage = () => {
   );
 };
 
-export default Home;
+export default Abc;
