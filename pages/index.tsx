@@ -1,13 +1,15 @@
+import { MainLayout } from '@/components/layout';
 import { useLang } from '@/hooks';
-import type { NextPage } from 'next';
+import { NextPageWithLayout } from '@/modules';
 
-const Home: NextPage = () => {
-  const dataLang = useLang();
-  return (
-      <>
-      <div className='flex'>{dataLang.home.title}</div>
-    </>
-  );
+const Home: NextPageWithLayout = () => {
+	const dataLang = useLang();
+	return (
+		<>
+			<div className='flex'>{dataLang.home.title}</div>
+		</>
+	);
 };
 
+Home.Layout = MainLayout;
 export default Home;

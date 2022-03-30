@@ -39,7 +39,6 @@ export default function apiLogin(
           const { accessToken, expiredAt } = JSON.parse(body);
 
           // convert token to cookies
-          console.log(process.env.NODE_ENV);
 
           const cookies = new Cookies(req, res, {
             secure: process.env.NODE_ENV !== 'development',
@@ -63,7 +62,7 @@ export default function apiLogin(
     };
     proxy.once('proxyRes', handleLoginResponse);
     proxy.web(req, res, {
-      target: process.env.API_URL,
+      target: process.env.URL_API,
       changeOrigin: true,
       selfHandleResponse: true,
     });
