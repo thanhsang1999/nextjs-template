@@ -1,13 +1,14 @@
-import { useLang } from '@/hooks';
-import type { NextPage } from 'next';
+import {AdminLayout} from '@/components/layout';
+import {useLang} from '@/hooks';
+import {NextPageWithLayout} from '@/modules';
 
-const Abc: NextPage = () => {
-  const dataLang = useLang();
-  return (
-      <>
-      <div className='flex'>{dataLang.home.title}</div>
-    </>
-  );
+const Abc: NextPageWithLayout = () => {
+	const dataLang = useLang();
+	return (
+		<>
+			<div className='flex'>{dataLang.home.title}</div>
+		</>
+	);
 };
-
+Abc.Layout = AdminLayout;
 export default Abc;

@@ -1,10 +1,11 @@
 import {LayoutProps} from '@/modules/layout';
 import Link from 'next/link';
 import * as React from 'react';
+import {Authentication} from '../common';
 
 export function AdminLayout({children}: LayoutProps) {
 	return (
-		<div>
+		<Authentication>
 			<h1>Admin Layout</h1>
 			<Link href='/'>
 				<a>Home</a>
@@ -13,6 +14,6 @@ export function AdminLayout({children}: LayoutProps) {
 				<a>About</a>
 			</Link>
 			<>{children}</>
-		</div>
+		</Authentication>
 	);
 }

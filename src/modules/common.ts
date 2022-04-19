@@ -1,4 +1,9 @@
+import {ReactNode} from 'react';
+
 interface Message {
 	message: string;
 }
-export type {Message};
+interface ChildrenReact {
+	children: ReactNode;
+}
+export type {Message,ChildrenReact};
