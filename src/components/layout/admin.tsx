@@ -1,4 +1,4 @@
-import {LayoutProps} from '@/modules/layout';
+import {LayoutProps} from '@/modules/Common/layoutModule';
 import Link from 'next/link';
 import * as React from 'react';
 import {Authentication} from '../common';

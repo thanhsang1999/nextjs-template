@@ -1,5 +1,4 @@
-import {LayoutProps} from '@/modules';
-import Link from 'next/link';
+import { LayoutProps } from '@/modules';
 import * as React from 'react';
 import Header from '../common/header';
 

@@ -1,5 +1,4 @@
-import {LayoutProps} from '@/modules/layout';
-import Link from 'next/link';
+import { LayoutProps } from '@/modules/Common/layoutModule';
 import * as React from 'react';
 
 export function EmptyLayout({children}: LayoutProps) {

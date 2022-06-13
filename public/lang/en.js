@@ -1,6 +1,6 @@
 export const en = {
-  home: {
-    title: 'Hello',
-    content: 'LOL',
-  },
+	// HOME
+	TITLE: 'Hello',
+	CONTENT: 'Content',
+  NAME:'Nguyễn Huy Thành Sang'
 };

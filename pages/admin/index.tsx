@@ -1,5 +1,5 @@
 import { AdminLayout } from '@/components/layout';
-import { useLang } from '@/hooks';
+import { useMessage } from '@/hooks';
 import { NextPageWithLayout } from '@/modules';
 
 const Admin: NextPageWithLayout = () => {
