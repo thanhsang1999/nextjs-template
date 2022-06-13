@@ -1,6 +1,6 @@
 export const vi = {
-  home: {
-    title: 'Chào mừng tới Viblo!',
-    content: 'Bắt đầu một bài viết nào',
-  },
+	//HOME
+	TITLE: 'Xin Chào',
+	CONTENT: 'Nội dung',
+  NAME:'Nguyễn Huy Thành Sang'
 };
