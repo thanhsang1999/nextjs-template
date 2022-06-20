@@ -1,4 +1,4 @@
-import {en, vi} from 'public/lang';
+import {en, vi} from '@/utils/lang';
 import {useEffect, useRef, useState} from 'react';
 
 export const useMessage = () => {
@@ -22,7 +22,7 @@ export const useMessage = () => {
 	}
 
 	return {
-		dataLang:dataLang.data,
+		dataLang: dataLang.data,
 		setDataLang: handleChangeLang,
 	};
 };
